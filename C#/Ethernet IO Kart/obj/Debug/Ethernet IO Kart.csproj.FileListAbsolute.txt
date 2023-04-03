@@ -1,0 +1,34 @@
+C:\Users\Filosoft\AppData\Local\Temporary Projects\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe.config
+E:\HDS SDK\C#\Ethernet IO Kart\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe.config
+E:\HDS SDK\C#\Ethernet IO Kart\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe
+E:\HDS SDK\C#\Ethernet IO Kart\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.pdb
+E:\HDS SDK\C#\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csprojResolveAssemblyReference.cache
+E:\HDS SDK\C#\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Ethernet_IO_Kart.resources
+E:\HDS SDK\C#\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Properties.Resources.resources
+E:\HDS SDK\C#\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.GenerateResource.Cache
+E:\HDS SDK\C#\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe
+E:\HDS SDK\C#\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.pdb
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe.config
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.pdb
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.pdb
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Ethernet_IO_Kart.resources
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Properties.Resources.resources
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.GenerateResource.Cache
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.AssemblyReference.cache
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.SuggestedBindingRedirects.cache
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.CoreCompileInputs.cache
+E:\HDS SDK\Ethernet IO Kart\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe.licenses
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe.config
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.pdb
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.AssemblyReference.cache
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.SuggestedBindingRedirects.cache
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Ethernet_IO_Kart.resources
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Properties.Resources.resources
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.GenerateResource.cache
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe.licenses
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.CoreCompileInputs.cache
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.pdb

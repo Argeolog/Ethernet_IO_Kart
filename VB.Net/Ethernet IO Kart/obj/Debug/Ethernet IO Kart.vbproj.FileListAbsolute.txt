@@ -1,0 +1,23 @@
+C:\Users\Ertan-Dev\Desktop\Ethernet IO Kart\Vb.net\Ethernet IO Kart\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe.config
+C:\Users\Ertan-Dev\Desktop\Ethernet IO Kart\Vb.net\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Resources.resources
+C:\Users\Ertan-Dev\Desktop\Ethernet IO Kart\Vb.net\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.vbproj.GenerateResource.Cache
+C:\Users\Ertan-Dev\Desktop\Ethernet IO Kart\Vb.net\Ethernet IO Kart\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe
+C:\Users\Ertan-Dev\Desktop\Ethernet IO Kart\Vb.net\Ethernet IO Kart\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.pdb
+C:\Users\Ertan-Dev\Desktop\Ethernet IO Kart\Vb.net\Ethernet IO Kart\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.xml
+C:\Users\Ertan-Dev\Desktop\Ethernet IO Kart\Vb.net\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe
+C:\Users\Ertan-Dev\Desktop\Ethernet IO Kart\Vb.net\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.xml
+C:\Users\Ertan-Dev\Desktop\Ethernet IO Kart\Vb.net\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.pdb
+C:\Users\Ertan-Dev\Desktop\Ethernet IO Kart\Vb.net\Ethernet IO Kart\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Anasayfa.resources
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe.config
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.pdb
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.xml
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.vbproj.AssemblyReference.cache
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.vbproj.SuggestedBindingRedirects.cache
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Ethernet_IO_Kart.resources
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Resources.resources
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.vbproj.GenerateResource.cache
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.vbproj.CoreCompileInputs.cache
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.xml
+D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.pdb

@@ -49,7 +49,8 @@ Public Class Ethernet_IO_Kart
         If Tcp_Radio.Checked = True Then
             Dim Tcp As TcpClient = New TcpClient()
 
-            If Tcp.ConnectAsync(IPAddress.Parse(ip_Adres_Text.Text), Convert.ToInt32(Haberlesme_Portu_Text.Text)).Wait(500) Then  '500 Ms Boyunca Bağlanmaya Çalışır.
+            If Tcp.ConnectAsync(IPAddress.Parse(ip_Adres_Text.Text), Convert.ToInt32(Haberlesme_Portu_Text.Text)).Wait(1000) Then  '500 Ms Boyunca Bağlanmaya Çalışır.
+                Me.Text = "Veri Gönderiliyor..." & Now.ToString("HH:mm:ss.fff")
                 Dim NetworkSteaming As NetworkStream = Tcp.GetStream()
                 Dim Bytes As Byte() = Encoding.GetEncoding("ISO-8859-9").GetBytes(islemRoleNo & islemKodu)
                 NetworkSteaming.Write(Bytes, 0, Bytes.Length)
@@ -113,6 +114,7 @@ Public Class Ethernet_IO_Kart
                 items.SubItems.Add(CInt(HamData.Substring(126, 2)))
                 items.SubItems.Add(CInt(HamData.Substring(128, 2)))
                 items.SubItems.Add(CInt(HamData.Substring(130, 2)))
+                items.SubItems.Add(CInt(HamData.Substring(132, 1)))
                 Gelen_Datalar_Listview.Items.Add(items)
             Next
 
@@ -225,6 +227,8 @@ Public Class Ethernet_IO_Kart
 
     Private Sub Gelen_Datalar_Listview_SelectedIndexChanged(sender As Object, e As EventArgs) Handles Gelen_Datalar_Listview.SelectedIndexChanged
         If Gelen_Datalar_Listview.SelectedItems.Count > 0 Then
+
+
             Mac_Adres_Text.Text = Gelen_Datalar_Listview.SelectedItems(0).SubItems(0).Text
             Cihaz_Adı_Text.Text = Gelen_Datalar_Listview.SelectedItems(0).SubItems(3).Text.TrimEnd()
             Cihaz_ID_Text.Text = Gelen_Datalar_Listview.SelectedItems(0).SubItems(4).Text
@@ -237,6 +241,7 @@ Public Class Ethernet_IO_Kart
             Role_2_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems(0).SubItems(11).Text
             Role_3_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems(0).SubItems(12).Text
             Role_4_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems(0).SubItems(13).Text
+            Tcp_Soketi_Kapat_Check.Checked = CBool(Gelen_Datalar_Listview.SelectedItems(0).SubItems(14).Text)
         End If
     End Sub
 

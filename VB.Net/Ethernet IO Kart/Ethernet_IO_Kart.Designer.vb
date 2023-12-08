@@ -94,6 +94,7 @@ Partial Class Ethernet_IO_Kart
         Me.Role_4_Ac_Buton = New System.Windows.Forms.Button()
         Me.input_1_Alindi_Buton = New System.Windows.Forms.Button()
         Me.groupBox2 = New System.Windows.Forms.GroupBox()
+        Me.Tcp_Soketi_Kapat_Check = New System.Windows.Forms.CheckBox()
         Me.label10 = New System.Windows.Forms.Label()
         Me.Alt_Ag_Maskesi_Text = New System.Windows.Forms.TextBox()
         Me.label8 = New System.Windows.Forms.Label()
@@ -119,7 +120,7 @@ Partial Class Ethernet_IO_Kart
         Me.Udp_Radio = New System.Windows.Forms.RadioButton()
         Me.Tcp_Radio = New System.Windows.Forms.RadioButton()
         Me.Role_4_Tetikle_Buton = New System.Windows.Forms.Button()
-        Me.Tcp_Soketi_Kapat_Check = New System.Windows.Forms.CheckBox()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.groupBox3.SuspendLayout()
         CType(Me.Role_4_Picturebox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Role_3_Picturebox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -306,7 +307,7 @@ Partial Class Ethernet_IO_Kart
         '
         'Durum_Sorgula_Buton
         '
-        Me.Durum_Sorgula_Buton.Location = New System.Drawing.Point(432, 22)
+        Me.Durum_Sorgula_Buton.Location = New System.Drawing.Point(431, 31)
         Me.Durum_Sorgula_Buton.Name = "Durum_Sorgula_Buton"
         Me.Durum_Sorgula_Buton.Size = New System.Drawing.Size(186, 53)
         Me.Durum_Sorgula_Buton.TabIndex = 40
@@ -440,7 +441,7 @@ Partial Class Ethernet_IO_Kart
         Me.groupBox3.Controls.Add(Me.input_1_Picturebox)
         Me.groupBox3.Location = New System.Drawing.Point(522, 235)
         Me.groupBox3.Name = "groupBox3"
-        Me.groupBox3.Size = New System.Drawing.Size(626, 90)
+        Me.groupBox3.Size = New System.Drawing.Size(699, 90)
         Me.groupBox3.TabIndex = 47
         Me.groupBox3.TabStop = False
         Me.groupBox3.Text = "İnput ve Röle Durumları"
@@ -668,7 +669,7 @@ Partial Class Ethernet_IO_Kart
         '
         Me.Ayar_Gonder_Buton.Location = New System.Drawing.Point(522, 576)
         Me.Ayar_Gonder_Buton.Name = "Ayar_Gonder_Buton"
-        Me.Ayar_Gonder_Buton.Size = New System.Drawing.Size(626, 55)
+        Me.Ayar_Gonder_Buton.Size = New System.Drawing.Size(699, 55)
         Me.Ayar_Gonder_Buton.TabIndex = 45
         Me.Ayar_Gonder_Buton.Text = "Ayarları Gönder"
         Me.Ayar_Gonder_Buton.UseVisualStyleBackColor = True
@@ -786,10 +787,20 @@ Partial Class Ethernet_IO_Kart
         Me.groupBox2.Controls.Add(Me.Mac_Adres_Text)
         Me.groupBox2.Location = New System.Drawing.Point(522, 331)
         Me.groupBox2.Name = "groupBox2"
-        Me.groupBox2.Size = New System.Drawing.Size(626, 239)
+        Me.groupBox2.Size = New System.Drawing.Size(699, 239)
         Me.groupBox2.TabIndex = 42
         Me.groupBox2.TabStop = False
         Me.groupBox2.Text = "Ayarlar"
+        '
+        'Tcp_Soketi_Kapat_Check
+        '
+        Me.Tcp_Soketi_Kapat_Check.AutoSize = True
+        Me.Tcp_Soketi_Kapat_Check.Location = New System.Drawing.Point(11, 216)
+        Me.Tcp_Soketi_Kapat_Check.Name = "Tcp_Soketi_Kapat_Check"
+        Me.Tcp_Soketi_Kapat_Check.Size = New System.Drawing.Size(385, 17)
+        Me.Tcp_Soketi_Kapat_Check.TabIndex = 37
+        Me.Tcp_Soketi_Kapat_Check.Text = "2 Saniyede İçinde Sorgu Gelmezse Tcp Soketi Kapat ( V.3.0 ve sonrası İçin)"
+        Me.Tcp_Soketi_Kapat_Check.UseVisualStyleBackColor = True
         '
         'label10
         '
@@ -960,14 +971,14 @@ Partial Class Ethernet_IO_Kart
         '
         'Gelen_Datalar_Listview
         '
-        Me.Gelen_Datalar_Listview.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.MacID, Me.columnHeader2, Me.columnHeader3, Me.columnHeader8, Me.columnHeader9, Me.columnHeader10, Me.columnHeader11, Me.columnHeader12, Me.columnHeader13, Me.columnHeader14, Me.columnHeader15, Me.columnHeader16, Me.columnHeader17, Me.columnHeader18})
+        Me.Gelen_Datalar_Listview.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.MacID, Me.columnHeader2, Me.columnHeader3, Me.columnHeader8, Me.columnHeader9, Me.columnHeader10, Me.columnHeader11, Me.columnHeader12, Me.columnHeader13, Me.columnHeader14, Me.columnHeader15, Me.columnHeader16, Me.columnHeader17, Me.columnHeader18, Me.ColumnHeader1})
         Me.Gelen_Datalar_Listview.FullRowSelect = True
         Me.Gelen_Datalar_Listview.GridLines = True
         Me.Gelen_Datalar_Listview.HideSelection = False
         Me.Gelen_Datalar_Listview.Location = New System.Drawing.Point(17, 33)
         Me.Gelen_Datalar_Listview.Name = "Gelen_Datalar_Listview"
         Me.Gelen_Datalar_Listview.Scrollable = False
-        Me.Gelen_Datalar_Listview.Size = New System.Drawing.Size(1130, 192)
+        Me.Gelen_Datalar_Listview.Size = New System.Drawing.Size(1204, 192)
         Me.Gelen_Datalar_Listview.Sorting = System.Windows.Forms.SortOrder.Descending
         Me.Gelen_Datalar_Listview.TabIndex = 46
         Me.Gelen_Datalar_Listview.UseCompatibleStateImageBehavior = False
@@ -1059,23 +1070,16 @@ Partial Class Ethernet_IO_Kart
         Me.Role_4_Tetikle_Buton.Text = "Röle 4 Tetikle"
         Me.Role_4_Tetikle_Buton.UseVisualStyleBackColor = True
         '
-        'Tcp_Soketi_Kapat_Check
+        'ColumnHeader1
         '
-        Me.Tcp_Soketi_Kapat_Check.AutoSize = True
-        Me.Tcp_Soketi_Kapat_Check.Checked = True
-        Me.Tcp_Soketi_Kapat_Check.CheckState = System.Windows.Forms.CheckState.Checked
-        Me.Tcp_Soketi_Kapat_Check.Location = New System.Drawing.Point(11, 216)
-        Me.Tcp_Soketi_Kapat_Check.Name = "Tcp_Soketi_Kapat_Check"
-        Me.Tcp_Soketi_Kapat_Check.Size = New System.Drawing.Size(385, 17)
-        Me.Tcp_Soketi_Kapat_Check.TabIndex = 37
-        Me.Tcp_Soketi_Kapat_Check.Text = "2 Saniyede İçinde Sorgu Gelmezse Tcp Soketi Kapat ( V.3.0 ve sonrası İçin)"
-        Me.Tcp_Soketi_Kapat_Check.UseVisualStyleBackColor = True
+        Me.ColumnHeader1.Text = "Oto TCP Kapat"
+        Me.ColumnHeader1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'Ethernet_IO_Kart
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1160, 643)
+        Me.ClientSize = New System.Drawing.Size(1227, 643)
         Me.Controls.Add(Me.Bulunan_Cihaz_Sayısı_Label)
         Me.Controls.Add(Me.Cihaz_Ara_Buton)
         Me.Controls.Add(Me.label25)
@@ -1201,4 +1205,5 @@ Partial Class Ethernet_IO_Kart
     Private WithEvents Tcp_Radio As System.Windows.Forms.RadioButton
     Private WithEvents Role_4_Tetikle_Buton As System.Windows.Forms.Button
     Private WithEvents Tcp_Soketi_Kapat_Check As CheckBox
+    Friend WithEvents ColumnHeader1 As ColumnHeader
 End Class

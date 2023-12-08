@@ -21,3 +21,15 @@ D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net
 D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe
 D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.xml
 D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.pdb
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe.config
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.pdb
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.xml
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.vbproj.AssemblyReference.cache
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Ethernet_IO_Kart.resources
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Resources.resources
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.vbproj.GenerateResource.cache
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.vbproj.CoreCompileInputs.cache
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.xml
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\VB.Net\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.pdb

@@ -114,13 +114,15 @@ Partial Class Ethernet_IO_Kart
         Me.Role_3_Ac_Buton = New System.Windows.Forms.Button()
         Me.input_2_Alindi_Buton = New System.Windows.Forms.Button()
         Me.Gelen_Datalar_Listview = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.groupBox1 = New System.Windows.Forms.GroupBox()
         Me.Udp_Broadcast_Radio = New System.Windows.Forms.RadioButton()
         Me.label27 = New System.Windows.Forms.Label()
         Me.Udp_Radio = New System.Windows.Forms.RadioButton()
         Me.Tcp_Radio = New System.Windows.Forms.RadioButton()
         Me.Role_4_Tetikle_Buton = New System.Windows.Forms.Button()
-        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.UDP_izin_Check = New System.Windows.Forms.CheckBox()
+        Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.groupBox3.SuspendLayout()
         CType(Me.Role_4_Picturebox, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Role_3_Picturebox, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -748,6 +750,7 @@ Partial Class Ethernet_IO_Kart
         '
         'groupBox2
         '
+        Me.groupBox2.Controls.Add(Me.UDP_izin_Check)
         Me.groupBox2.Controls.Add(Me.Tcp_Soketi_Kapat_Check)
         Me.groupBox2.Controls.Add(Me.Cihaz_ID_Text)
         Me.groupBox2.Controls.Add(Me.label3)
@@ -971,7 +974,7 @@ Partial Class Ethernet_IO_Kart
         '
         'Gelen_Datalar_Listview
         '
-        Me.Gelen_Datalar_Listview.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.MacID, Me.columnHeader2, Me.columnHeader3, Me.columnHeader8, Me.columnHeader9, Me.columnHeader10, Me.columnHeader11, Me.columnHeader12, Me.columnHeader13, Me.columnHeader14, Me.columnHeader15, Me.columnHeader16, Me.columnHeader17, Me.columnHeader18, Me.ColumnHeader1})
+        Me.Gelen_Datalar_Listview.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.MacID, Me.columnHeader2, Me.columnHeader3, Me.columnHeader8, Me.columnHeader9, Me.columnHeader10, Me.columnHeader11, Me.columnHeader12, Me.columnHeader13, Me.columnHeader14, Me.columnHeader15, Me.columnHeader16, Me.columnHeader17, Me.columnHeader18, Me.ColumnHeader1, Me.ColumnHeader4})
         Me.Gelen_Datalar_Listview.FullRowSelect = True
         Me.Gelen_Datalar_Listview.GridLines = True
         Me.Gelen_Datalar_Listview.HideSelection = False
@@ -983,6 +986,11 @@ Partial Class Ethernet_IO_Kart
         Me.Gelen_Datalar_Listview.TabIndex = 46
         Me.Gelen_Datalar_Listview.UseCompatibleStateImageBehavior = False
         Me.Gelen_Datalar_Listview.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Oto TCP Kapat"
+        Me.ColumnHeader1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         '
         'groupBox1
         '
@@ -1070,10 +1078,20 @@ Partial Class Ethernet_IO_Kart
         Me.Role_4_Tetikle_Buton.Text = "Röle 4 Tetikle"
         Me.Role_4_Tetikle_Buton.UseVisualStyleBackColor = True
         '
-        'ColumnHeader1
+        'UDP_izin_Radio
         '
-        Me.ColumnHeader1.Text = "Oto TCP Kapat"
-        Me.ColumnHeader1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.UDP_izin_Check.AutoSize = True
+        Me.UDP_izin_Check.Location = New System.Drawing.Point(402, 216)
+        Me.UDP_izin_Check.Name = "UDP_izin_Radio"
+        Me.UDP_izin_Check.Size = New System.Drawing.Size(262, 17)
+        Me.UDP_izin_Check.TabIndex = 38
+        Me.UDP_izin_Check.Text = "Röle İşlemleri UDP 'den de Yapılabilsin (Önerilmez)"
+        Me.UDP_izin_Check.UseVisualStyleBackColor = True
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Röle UDP İzni"
+        Me.ColumnHeader4.Width = 80
         '
         'Ethernet_IO_Kart
         '
@@ -1206,4 +1224,6 @@ Partial Class Ethernet_IO_Kart
     Private WithEvents Role_4_Tetikle_Buton As System.Windows.Forms.Button
     Private WithEvents Tcp_Soketi_Kapat_Check As CheckBox
     Friend WithEvents ColumnHeader1 As ColumnHeader
+    Private WithEvents UDP_izin_Check As CheckBox
+    Friend WithEvents ColumnHeader4 As ColumnHeader
 End Class

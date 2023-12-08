@@ -127,6 +127,8 @@
             this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.UDP_izin_Check = new System.Windows.Forms.CheckBox();
+            this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -389,6 +391,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.UDP_izin_Check);
             this.groupBox2.Controls.Add(this.Tcp_Soketi_Kapat_Check);
             this.groupBox2.Controls.Add(this.Cihaz_ID_Text);
             this.groupBox2.Controls.Add(this.label3);
@@ -1029,7 +1032,8 @@
             this.columnHeader16,
             this.columnHeader17,
             this.columnHeader18,
-            this.ColumnHeader1});
+            this.ColumnHeader1,
+            this.columnHeader4});
             this.Gelen_Datalar_Listview.FullRowSelect = true;
             this.Gelen_Datalar_Listview.GridLines = true;
             this.Gelen_Datalar_Listview.HideSelection = false;
@@ -1116,6 +1120,20 @@
             // 
             this.ColumnHeader1.Text = "Oto TCP Kapat";
             this.ColumnHeader1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // UDP_izin_Check
+            // 
+            this.UDP_izin_Check.AutoSize = true;
+            this.UDP_izin_Check.Location = new System.Drawing.Point(402, 211);
+            this.UDP_izin_Check.Name = "UDP_izin_Check";
+            this.UDP_izin_Check.Size = new System.Drawing.Size(262, 17);
+            this.UDP_izin_Check.TabIndex = 39;
+            this.UDP_izin_Check.Text = "Röle İşlemleri UDP \'den de Yapılabilsin (Önerilmez)";
+            this.UDP_izin_Check.UseVisualStyleBackColor = true;
+            // 
+            // columnHeader4
+            // 
+            this.columnHeader4.Text = "Röle UDP İzni";
             // 
             // Ethernet_IO_Kart
             // 
@@ -1255,6 +1273,8 @@
         private System.Windows.Forms.ColumnHeader columnHeader17;
         private System.Windows.Forms.ColumnHeader columnHeader18;
         internal System.Windows.Forms.ColumnHeader ColumnHeader1;
+        private System.Windows.Forms.CheckBox UDP_izin_Check;
+        private System.Windows.Forms.ColumnHeader columnHeader4;
     }
 }
 

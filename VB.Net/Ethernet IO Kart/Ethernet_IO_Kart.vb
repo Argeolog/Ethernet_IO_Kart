@@ -50,7 +50,7 @@ Public Class Ethernet_IO_Kart
             Dim Tcp As TcpClient = New TcpClient()
 
             If Tcp.ConnectAsync(IPAddress.Parse(ip_Adres_Text.Text), Convert.ToInt32(Haberlesme_Portu_Text.Text)).Wait(1000) Then  '500 Ms Boyunca Bağlanmaya Çalışır.
-                Me.Text = "Veri Gönderiliyor..." & Now.ToString("HH:mm:ss.fff")
+                Me.Text = "TCP Veri Gönderiliyor..." & Now.ToString("HH:mm:ss.fff")
                 Dim NetworkSteaming As NetworkStream = Tcp.GetStream()
                 Dim Bytes As Byte() = Encoding.GetEncoding("ISO-8859-9").GetBytes(islemRoleNo & islemKodu)
                 NetworkSteaming.Write(Bytes, 0, Bytes.Length)
@@ -61,6 +61,7 @@ Public Class Ethernet_IO_Kart
                 MessageBox.Show("Tcp Bağlantısı Sağlanamadı !!")
             End If
         ElseIf Udp_Radio.Checked = True Then
+            Me.Text = "UDP Veri Gönderiliyor..." & Now.ToString("HH:mm:ss.fff")
             Dim Udp As UdpClient = New UdpClient()
             Udp.EnableBroadcast = False
             Dim Bytes As Byte() = Encoding.GetEncoding("ISO-8859-9").GetBytes(islemRoleNo & islemKodu)
@@ -68,6 +69,7 @@ Public Class Ethernet_IO_Kart
             Udp.Send(Bytes, Bytes.Length)
             Udp.Close()
         Else
+            Me.Text = "UDP BroadCast Veri Gönderiliyor..." & Now.ToString("HH:mm:ss.fff")
             Dim Udp As UdpClient = New UdpClient()
             Udp.EnableBroadcast = True
             Dim Bytes As Byte() = Encoding.GetEncoding("ISO-8859-9").GetBytes(islemRoleNo & islemKodu)
@@ -115,6 +117,7 @@ Public Class Ethernet_IO_Kart
                 items.SubItems.Add(CInt(HamData.Substring(128, 2)))
                 items.SubItems.Add(CInt(HamData.Substring(130, 2)))
                 items.SubItems.Add(CInt(HamData.Substring(132, 1)))
+                items.SubItems.Add(CInt(HamData.Substring(133, 1)))
                 Gelen_Datalar_Listview.Items.Add(items)
             Next
 
@@ -205,9 +208,13 @@ Public Class Ethernet_IO_Kart
         Komut &= Role_2_Suresi_Text.Text.PadLeft(2, "0")  ' Röle 2 Süresi
         Komut &= Role_3_Suresi_Text.Text.PadLeft(2, "0")  ' Röle 3 Süresi
         Komut &= Role_4_Suresi_Text.Text.PadLeft(2, "0")  ' Röle 4 Süresi
-        Komut &= Tcp_Soketi_Kapat_Check.CheckState
-        Komut &= "000000000000000000000000000000000000000000000000000**" ' Revize. Toplam Gidecek Data Uzunluğu 175 Olmalıdır.
+        Komut &= Tcp_Soketi_Kapat_Check.CheckState ' Versiyon 3 ve Sonrası İçin Geçerli Olacaktır. Eğerki Socket Bağlantısı varsa Ama 2 saniye İçinde Sorgu Gelmezse Bağlantı Otomatik Olarak Kapanır. Pc Bağlantısı Kopup, Link Varsa Tedbiridir.
+        Komut &= UDP_izin_Check.CheckState ' Udp Gelen Komutlar İşlensin mi ? Röle Aç vs gibi.
 
+        Komut &= "00000000000000000000000000000000000000000000000000**" ' Revize. Toplam Gidecek Data Uzunluğu 175 Olmalıdır.
+
+        Dim srt As String = "00000000000000000000000000000000000000000000000000"
+        MsgBox(srt.Length)
         ' Cihaz Gelen Data Kontrolünü Yapar ve Beklenilen Format Dışında Bir Değer Tespit Ederse Error Komutunu Döndürür.
         ' Örnek Ip Adresi 192.168.1.120  Olması Gerekirken
         '192.168.300.100 Gönderirsen veya İçerisinde Harf Yer Alırsa Gibi  Durumlarda.
@@ -242,6 +249,7 @@ Public Class Ethernet_IO_Kart
             Role_3_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems(0).SubItems(12).Text
             Role_4_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems(0).SubItems(13).Text
             Tcp_Soketi_Kapat_Check.Checked = CBool(Gelen_Datalar_Listview.SelectedItems(0).SubItems(14).Text)
+            UDP_izin_Check.Checked = CBool(Gelen_Datalar_Listview.SelectedItems(0).SubItems(15).Text)
         End If
     End Sub
 
@@ -320,7 +328,7 @@ Public Class Ethernet_IO_Kart
         If Gelen_Datalar_Listview.Items.Count = 0 Then Return
         Dim Tcp As TcpClient = New TcpClient()
 
-        If Tcp.ConnectAsync(IPAddress.Parse(ip_Adres_Text.Text), Convert.ToInt32(Haberlesme_Portu_Text.Text)).Wait(500) Then  '500 Ms Boyunca Bağlanmaya Çalışır.
+        If Tcp.ConnectAsync(IPAddress.Parse(ip_Adres_Text.Text), Convert.ToInt32(Haberlesme_Portu_Text.Text)).Wait(1000) Then  '500 Ms Boyunca Bağlanmaya Çalışır.
             Dim NetworkSteaming As NetworkStream = Tcp.GetStream()
             Dim Bytes As Byte() = Encoding.GetEncoding("ISO-8859-9").GetBytes("64")
             NetworkSteaming.Write(Bytes, 0, Bytes.Length)

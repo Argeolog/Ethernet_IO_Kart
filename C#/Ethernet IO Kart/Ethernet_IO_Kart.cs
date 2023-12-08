@@ -225,7 +225,7 @@ namespace Ethernet_IO_Kart
                  items.SubItems.Add(Convert.ToString(Convert.ToInt32(HamData.Substring(128, 2))));
                  items.SubItems.Add(Convert.ToString(Convert.ToInt32(HamData.Substring(130, 2))));
                  items.SubItems.Add(Convert.ToString(Convert.ToInt32(HamData.Substring(132, 1))));
-                
+                    items.SubItems.Add(Convert.ToString(Convert.ToInt32(HamData.Substring(133, 1))));
                     Gelen_Datalar_Listview.Items.Add(items);
 
                     
@@ -441,9 +441,9 @@ namespace Ethernet_IO_Kart
                 Komut +=  Role_3_Suresi_Text.Text.PadLeft(2, '0');  // Röle 3 Süresi
                 Komut +=  Role_4_Suresi_Text.Text.PadLeft(2, '0');  // Röle 4 Süresi
                 Komut +=  ((int)Tcp_Soketi_Kapat_Check.CheckState); // Versiyon 3 ve Sonrası İçin Geçerli Olacaktır. Eğerki Socket Bağlantısı varsa Ama 2 saniye İçinde Sorgu Gelmezse Bağlantı Otomatik Olarak Kapanır. Pc Bağlantısı Kopup, Link Varsa Tedbiridir.
+                Komut += ((int)UDP_izin_Check.CheckState); // UDP Gelen Komutlar İşlensin mi ? Röle Aç vs gibi.
 
-                               
-                Komut +="000000000000000000000000000000000000000000000000000**"; // Revize. Toplam Gidecek Data Uzunluğu 175 Olmalıdır.
+                Komut +="00000000000000000000000000000000000000000000000000**"; // Revize. Toplam Gidecek Data Uzunluğu 175 Olmalıdır.
                
                 // Cihaz Gelen Data Kontrolünü Yapar ve Beklenilen Format Dışında Bir Değer Tespit Ederse Error Komutunu Döndürür.
                 // Örnek Ip Adresi 192.168.1.120  Olması Gerekirken
@@ -603,6 +603,7 @@ namespace Ethernet_IO_Kart
                 Role_3_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[12].Text;
                 Role_4_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[13].Text;
                 Tcp_Soketi_Kapat_Check.Checked = Gelen_Datalar_Listview.SelectedItems[0].SubItems[14].Text == "1" ? true : false;
+                UDP_izin_Check.Checked = Gelen_Datalar_Listview.SelectedItems[0].SubItems[15].Text == "1" ? true : false;
             }
         }
     }

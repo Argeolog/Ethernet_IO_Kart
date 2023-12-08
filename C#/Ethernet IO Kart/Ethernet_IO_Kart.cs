@@ -95,7 +95,7 @@ namespace Ethernet_IO_Kart
 
              if (Tcp.ConnectAsync(IPAddress.Parse(ip_Adres_Text.Text), Convert.ToInt32(Haberlesme_Portu_Text.Text)).Wait(500))  //500 Ms Boyunca Bağlanmaya Çalışır.
             {
-
+                    this.Text = "TCP Veri Gönderiliyor..." + DateTime.Now.ToString("HH:mm:ss.fff");
             NetworkStream NetworkSteaming = Tcp.GetStream();
             byte[] Bytes = Encoding.GetEncoding("ISO-8859-9").GetBytes(islemRoleNo + islemKodu);
             NetworkSteaming.Write(Bytes, 0, Bytes.Length);
@@ -122,7 +122,8 @@ namespace Ethernet_IO_Kart
         else if (Udp_Radio.Checked==true){
 
 
-            UdpClient Udp = new UdpClient();
+                this.Text = "UDP Veri Gönderiliyor..." + DateTime.Now.ToString("HH:mm:ss.fff");
+                UdpClient Udp = new UdpClient();
             Udp.EnableBroadcast = false;
             byte[] Bytes = Encoding.GetEncoding("ISO-8859-9").GetBytes(islemRoleNo + islemKodu);
             Udp.Connect(IPAddress.Parse(ip_Adres_Text.Text), Convert.ToInt32(Haberlesme_Portu_Text.Text)); //2018 Nolu Porta Cihaz Arama Komutu Gönderilir. 255.255.255.255= Broadcast Adresidir.Tüm Ağa Bu Bilgi Gönderilir.
@@ -139,7 +140,8 @@ namespace Ethernet_IO_Kart
         {
 
 
-            UdpClient Udp = new UdpClient();
+                this.Text = "UDP BroadCast Veri Gönderiliyor..." + DateTime.Now.ToString("HH:mm:ss.fff");
+                UdpClient Udp = new UdpClient();
             Udp.EnableBroadcast = true;
             byte[] Bytes = Encoding.GetEncoding("ISO-8859-9").GetBytes(islemRoleNo + islemKodu);
             Udp.Connect(IPAddress.Parse("255.255.255.255"), Convert.ToInt32(Haberlesme_Portu_Text.Text)); //2018 Nolu Porta Cihaz Arama Komutu Gönderilir. 255.255.255.255= Broadcast Adresidir.Tüm Ağa Bu Bilgi Gönderilir.
@@ -223,9 +225,7 @@ namespace Ethernet_IO_Kart
                  items.SubItems.Add(Convert.ToString(Convert.ToInt32(HamData.Substring(128, 2))));
                  items.SubItems.Add(Convert.ToString(Convert.ToInt32(HamData.Substring(130, 2))));
                  items.SubItems.Add(Convert.ToString(Convert.ToInt32(HamData.Substring(132, 1))));
-
-
-
+                
                     Gelen_Datalar_Listview.Items.Add(items);
 
                     
@@ -317,34 +317,7 @@ namespace Ethernet_IO_Kart
 
         }
 
-        private void Gelen_Datalar_Listview_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-            if (Gelen_Datalar_Listview.SelectedItems.Count > 0)
-            {
-
-                Mac_Adres_Text.Text=Gelen_Datalar_Listview.SelectedItems[0].SubItems[0].Text;
-                Cihaz_Adı_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[3].Text.TrimEnd();
-                Cihaz_ID_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[4].Text;
-                ip_Adres_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[5].Text;
-                Alt_Ag_Maskesi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[6].Text;
-                Alt_Ag_Gecidi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[7].Text;
-                Dns_Adresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[8].Text;
-                Haberlesme_Portu_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[9].Text;
-                Role_1_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[10].Text;
-                Role_2_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[11].Text;
-                Role_3_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[12].Text;
-                Role_4_Suresi_Text.Text =Gelen_Datalar_Listview.SelectedItems[0].SubItems[13].Text;
-                Tcp_Soketi_Kapat_Check.Checked=Gelen_Datalar_Listview.SelectedItems[0].SubItems[14].Text=="1" ? true : false ;
-            }
-
-          
-        }
-
-        private void Gelen_Datalar_Listview_ItemSelectionChanged(object sender, ListViewItemSelectionChangedEventArgs e)
-        {
-           
-        }
+       
 
         private void Role_1_Tetikle_Buton_Click(object sender, EventArgs e)
         {
@@ -610,6 +583,27 @@ namespace Ethernet_IO_Kart
 
 
       }
-     }   
+     }
+
+        private void Gelen_Datalar_Listview_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (Gelen_Datalar_Listview.SelectedItems.Count > 0)
+            {
+
+                Mac_Adres_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[0].Text;
+                Cihaz_Adı_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[3].Text.TrimEnd();
+                Cihaz_ID_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[4].Text;
+                ip_Adres_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[5].Text;
+                Alt_Ag_Maskesi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[6].Text;
+                Alt_Ag_Gecidi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[7].Text;
+                Dns_Adresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[8].Text;
+                Haberlesme_Portu_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[9].Text;
+                Role_1_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[10].Text;
+                Role_2_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[11].Text;
+                Role_3_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[12].Text;
+                Role_4_Suresi_Text.Text = Gelen_Datalar_Listview.SelectedItems[0].SubItems[13].Text;
+                Tcp_Soketi_Kapat_Check.Checked = Gelen_Datalar_Listview.SelectedItems[0].SubItems[14].Text == "1" ? true : false;
+            }
+        }
     }
 }

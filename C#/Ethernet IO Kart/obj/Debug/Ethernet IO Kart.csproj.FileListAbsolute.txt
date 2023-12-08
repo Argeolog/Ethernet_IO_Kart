@@ -32,3 +32,14 @@ D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Eth
 D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.CoreCompileInputs.cache
 D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe
 D:\HDS Otomasyon\Tetik Cihazları\Ethernet Tetik Cihazı\Versiyon 2.0\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.pdb
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe.config
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.exe
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\bin\Debug\Ethernet IO Kart.pdb
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.AssemblyReference.cache
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Ethernet_IO_Kart.resources
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet_IO_Kart.Properties.Resources.resources
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.GenerateResource.cache
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe.licenses
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.csproj.CoreCompileInputs.cache
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.exe
+C:\Users\Argeolog\Downloads\Ethernet_IO_Kart (2)\SDK\C#\Ethernet IO Kart\obj\Debug\Ethernet IO Kart.pdb

@@ -92,22 +92,6 @@
             this.Ayar_Gonder_Buton = new System.Windows.Forms.Button();
             this.label25 = new System.Windows.Forms.Label();
             this.Bulunan_Cihaz_Sayısı_Label = new System.Windows.Forms.Label();
-            this.Gelen_Datalar_Listview = new System.Windows.Forms.ListView();
-            this.MacID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.label33 = new System.Windows.Forms.Label();
             this.label32 = new System.Windows.Forms.Label();
@@ -127,6 +111,22 @@
             this.input_2_Picturebox = new System.Windows.Forms.PictureBox();
             this.input_1_Picturebox = new System.Windows.Forms.PictureBox();
             this.Zaman_Asamı_Timer = new System.Windows.Forms.Timer(this.components);
+            this.Gelen_Datalar_Listview = new System.Windows.Forms.ListView();
+            this.MacID = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader8 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader9 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader10 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader11 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader12 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader13 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader14 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader15 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader16 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader17 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.columnHeader18 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ColumnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -428,7 +428,7 @@
             this.groupBox2.Controls.Add(this.Mac_Adres_Text);
             this.groupBox2.Location = new System.Drawing.Point(521, 315);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(626, 234);
+            this.groupBox2.Size = new System.Drawing.Size(693, 234);
             this.groupBox2.TabIndex = 19;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Ayarlar";
@@ -436,8 +436,6 @@
             // Tcp_Soketi_Kapat_Check
             // 
             this.Tcp_Soketi_Kapat_Check.AutoSize = true;
-            this.Tcp_Soketi_Kapat_Check.Checked = true;
-            this.Tcp_Soketi_Kapat_Check.CheckState = System.Windows.Forms.CheckState.Checked;
             this.Tcp_Soketi_Kapat_Check.Location = new System.Drawing.Point(11, 211);
             this.Tcp_Soketi_Kapat_Check.Name = "Tcp_Soketi_Kapat_Check";
             this.Tcp_Soketi_Kapat_Check.Size = new System.Drawing.Size(385, 17);
@@ -787,7 +785,7 @@
             // 
             this.Ayar_Gonder_Buton.Location = new System.Drawing.Point(521, 555);
             this.Ayar_Gonder_Buton.Name = "Ayar_Gonder_Buton";
-            this.Ayar_Gonder_Buton.Size = new System.Drawing.Size(626, 55);
+            this.Ayar_Gonder_Buton.Size = new System.Drawing.Size(693, 55);
             this.Ayar_Gonder_Buton.TabIndex = 38;
             this.Ayar_Gonder_Buton.Text = "Ayarları Gönder";
             this.Ayar_Gonder_Buton.UseVisualStyleBackColor = true;
@@ -813,112 +811,6 @@
             this.Bulunan_Cihaz_Sayısı_Label.TabIndex = 37;
             this.Bulunan_Cihaz_Sayısı_Label.Text = "0";
             // 
-            // Gelen_Datalar_Listview
-            // 
-            this.Gelen_Datalar_Listview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.MacID,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader8,
-            this.columnHeader9,
-            this.columnHeader10,
-            this.columnHeader11,
-            this.columnHeader12,
-            this.columnHeader13,
-            this.columnHeader14,
-            this.columnHeader15,
-            this.columnHeader16,
-            this.columnHeader17,
-            this.columnHeader18,
-            this.columnHeader1});
-            this.Gelen_Datalar_Listview.FullRowSelect = true;
-            this.Gelen_Datalar_Listview.GridLines = true;
-            this.Gelen_Datalar_Listview.HideSelection = false;
-            this.Gelen_Datalar_Listview.Location = new System.Drawing.Point(16, 32);
-            this.Gelen_Datalar_Listview.Name = "Gelen_Datalar_Listview";
-            this.Gelen_Datalar_Listview.Scrollable = false;
-            this.Gelen_Datalar_Listview.Size = new System.Drawing.Size(1130, 192);
-            this.Gelen_Datalar_Listview.Sorting = System.Windows.Forms.SortOrder.Descending;
-            this.Gelen_Datalar_Listview.TabIndex = 38;
-            this.Gelen_Datalar_Listview.UseCompatibleStateImageBehavior = false;
-            this.Gelen_Datalar_Listview.View = System.Windows.Forms.View.Details;
-            this.Gelen_Datalar_Listview.ItemSelectionChanged += new System.Windows.Forms.ListViewItemSelectionChangedEventHandler(this.Gelen_Datalar_Listview_ItemSelectionChanged);
-            this.Gelen_Datalar_Listview.SelectedIndexChanged += new System.EventHandler(this.Gelen_Datalar_Listview_SelectedIndexChanged);
-            // 
-            // MacID
-            // 
-            this.MacID.Text = "Mac";
-            this.MacID.Width = 106;
-            // 
-            // columnHeader2
-            // 
-            this.columnHeader2.Text = "Versiyon";
-            this.columnHeader2.Width = 75;
-            // 
-            // columnHeader3
-            // 
-            this.columnHeader3.Text = "Model";
-            // 
-            // columnHeader8
-            // 
-            this.columnHeader8.Text = "Cihaz Adı";
-            this.columnHeader8.Width = 105;
-            // 
-            // columnHeader9
-            // 
-            this.columnHeader9.Text = "Cihaz ID";
-            this.columnHeader9.Width = 68;
-            // 
-            // columnHeader10
-            // 
-            this.columnHeader10.Text = "ip Adres";
-            this.columnHeader10.Width = 100;
-            // 
-            // columnHeader11
-            // 
-            this.columnHeader11.Text = "Alt Ağ Maskesi";
-            this.columnHeader11.Width = 117;
-            // 
-            // columnHeader12
-            // 
-            this.columnHeader12.Text = "Alt Ağ Geçidi";
-            this.columnHeader12.Width = 122;
-            // 
-            // columnHeader13
-            // 
-            this.columnHeader13.Text = "Dns";
-            this.columnHeader13.Width = 44;
-            // 
-            // columnHeader14
-            // 
-            this.columnHeader14.Text = "Port";
-            this.columnHeader14.Width = 85;
-            // 
-            // columnHeader15
-            // 
-            this.columnHeader15.Text = "Röle 1 S.";
-            this.columnHeader15.Width = 68;
-            // 
-            // columnHeader16
-            // 
-            this.columnHeader16.Text = "Röle 2 S.";
-            this.columnHeader16.Width = 68;
-            // 
-            // columnHeader17
-            // 
-            this.columnHeader17.Text = "Röle 3 S.";
-            this.columnHeader17.Width = 62;
-            // 
-            // columnHeader18
-            // 
-            this.columnHeader18.Text = "Röle 4 S.";
-            this.columnHeader18.Width = 57;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Text = "Tcp Otomatik Kapat";
-            this.columnHeader1.Width = 134;
-            // 
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.label33);
@@ -940,7 +832,7 @@
             this.groupBox3.Controls.Add(this.input_1_Picturebox);
             this.groupBox3.Location = new System.Drawing.Point(521, 234);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(626, 79);
+            this.groupBox3.Size = new System.Drawing.Size(693, 79);
             this.groupBox3.TabIndex = 39;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "İnput ve Röle Durumları";
@@ -1120,14 +1012,119 @@
             this.Zaman_Asamı_Timer.Interval = 500;
             this.Zaman_Asamı_Timer.Tick += new System.EventHandler(this.Zaman_Asamı_Timer_Tick);
             // 
+            // Gelen_Datalar_Listview
+            // 
+            this.Gelen_Datalar_Listview.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.MacID,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader8,
+            this.columnHeader9,
+            this.columnHeader10,
+            this.columnHeader11,
+            this.columnHeader12,
+            this.columnHeader13,
+            this.columnHeader14,
+            this.columnHeader15,
+            this.columnHeader16,
+            this.columnHeader17,
+            this.columnHeader18,
+            this.ColumnHeader1});
+            this.Gelen_Datalar_Listview.FullRowSelect = true;
+            this.Gelen_Datalar_Listview.GridLines = true;
+            this.Gelen_Datalar_Listview.HideSelection = false;
+            this.Gelen_Datalar_Listview.Location = new System.Drawing.Point(16, 32);
+            this.Gelen_Datalar_Listview.Name = "Gelen_Datalar_Listview";
+            this.Gelen_Datalar_Listview.Scrollable = false;
+            this.Gelen_Datalar_Listview.Size = new System.Drawing.Size(1204, 192);
+            this.Gelen_Datalar_Listview.Sorting = System.Windows.Forms.SortOrder.Descending;
+            this.Gelen_Datalar_Listview.TabIndex = 47;
+            this.Gelen_Datalar_Listview.UseCompatibleStateImageBehavior = false;
+            this.Gelen_Datalar_Listview.View = System.Windows.Forms.View.Details;
+            this.Gelen_Datalar_Listview.SelectedIndexChanged += new System.EventHandler(this.Gelen_Datalar_Listview_SelectedIndexChanged);
+            // 
+            // MacID
+            // 
+            this.MacID.Text = "Mac";
+            this.MacID.Width = 106;
+            // 
+            // columnHeader2
+            // 
+            this.columnHeader2.Text = "Versiyon";
+            this.columnHeader2.Width = 75;
+            // 
+            // columnHeader3
+            // 
+            this.columnHeader3.Text = "Model";
+            // 
+            // columnHeader8
+            // 
+            this.columnHeader8.Text = "Cihaz Adı";
+            this.columnHeader8.Width = 105;
+            // 
+            // columnHeader9
+            // 
+            this.columnHeader9.Text = "Cihaz ID";
+            this.columnHeader9.Width = 68;
+            // 
+            // columnHeader10
+            // 
+            this.columnHeader10.Text = "ip Adres";
+            this.columnHeader10.Width = 100;
+            // 
+            // columnHeader11
+            // 
+            this.columnHeader11.Text = "Alt Ağ Maskesi";
+            this.columnHeader11.Width = 117;
+            // 
+            // columnHeader12
+            // 
+            this.columnHeader12.Text = "Alt Ağ Geçidi";
+            this.columnHeader12.Width = 122;
+            // 
+            // columnHeader13
+            // 
+            this.columnHeader13.Text = "Dns";
+            this.columnHeader13.Width = 44;
+            // 
+            // columnHeader14
+            // 
+            this.columnHeader14.Text = "Port";
+            this.columnHeader14.Width = 85;
+            // 
+            // columnHeader15
+            // 
+            this.columnHeader15.Text = "Röle 1 S.";
+            this.columnHeader15.Width = 68;
+            // 
+            // columnHeader16
+            // 
+            this.columnHeader16.Text = "Röle 2 S.";
+            this.columnHeader16.Width = 68;
+            // 
+            // columnHeader17
+            // 
+            this.columnHeader17.Text = "Röle 3 S.";
+            this.columnHeader17.Width = 62;
+            // 
+            // columnHeader18
+            // 
+            this.columnHeader18.Text = "Röle 4 S.";
+            this.columnHeader18.Width = 57;
+            // 
+            // ColumnHeader1
+            // 
+            this.ColumnHeader1.Text = "Oto TCP Kapat";
+            this.ColumnHeader1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
             // Ethernet_IO_Kart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1160, 634);
+            this.ClientSize = new System.Drawing.Size(1226, 634);
+            this.Controls.Add(this.Gelen_Datalar_Listview);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.Ayar_Gonder_Buton);
-            this.Controls.Add(this.Gelen_Datalar_Listview);
             this.Controls.Add(this.Bulunan_Cihaz_Sayısı_Label);
             this.Controls.Add(this.label25);
             this.Controls.Add(this.groupBox2);
@@ -1221,22 +1218,7 @@
         private System.Windows.Forms.RadioButton Udp_Radio;
         private System.Windows.Forms.RadioButton Tcp_Radio;
         private System.Windows.Forms.Button Ayar_Gonder_Buton;
-        internal System.Windows.Forms.ListView Gelen_Datalar_Listview;
-        private System.Windows.Forms.ColumnHeader columnHeader8;
-        private System.Windows.Forms.ColumnHeader columnHeader9;
-        private System.Windows.Forms.ColumnHeader columnHeader10;
-        private System.Windows.Forms.ColumnHeader columnHeader11;
-        private System.Windows.Forms.ColumnHeader columnHeader12;
-        private System.Windows.Forms.ColumnHeader columnHeader13;
-        private System.Windows.Forms.ColumnHeader columnHeader14;
-        private System.Windows.Forms.ColumnHeader columnHeader15;
-        private System.Windows.Forms.ColumnHeader columnHeader16;
-        private System.Windows.Forms.ColumnHeader columnHeader17;
-        private System.Windows.Forms.ColumnHeader columnHeader18;
         private System.Windows.Forms.GroupBox groupBox3;
-        public System.Windows.Forms.ColumnHeader columnHeader2;
-        public System.Windows.Forms.ColumnHeader MacID;
-        private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.RadioButton Udp_Broadcast_Radio;
         private System.Windows.Forms.Timer Zaman_Asamı_Timer;
         private System.Windows.Forms.Label label33;
@@ -1257,7 +1239,22 @@
         private System.Windows.Forms.PictureBox input_2_Picturebox;
         private System.Windows.Forms.PictureBox input_1_Picturebox;
         private System.Windows.Forms.CheckBox Tcp_Soketi_Kapat_Check;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
+        internal System.Windows.Forms.ListView Gelen_Datalar_Listview;
+        public System.Windows.Forms.ColumnHeader MacID;
+        public System.Windows.Forms.ColumnHeader columnHeader2;
+        private System.Windows.Forms.ColumnHeader columnHeader3;
+        private System.Windows.Forms.ColumnHeader columnHeader8;
+        private System.Windows.Forms.ColumnHeader columnHeader9;
+        private System.Windows.Forms.ColumnHeader columnHeader10;
+        private System.Windows.Forms.ColumnHeader columnHeader11;
+        private System.Windows.Forms.ColumnHeader columnHeader12;
+        private System.Windows.Forms.ColumnHeader columnHeader13;
+        private System.Windows.Forms.ColumnHeader columnHeader14;
+        private System.Windows.Forms.ColumnHeader columnHeader15;
+        private System.Windows.Forms.ColumnHeader columnHeader16;
+        private System.Windows.Forms.ColumnHeader columnHeader17;
+        private System.Windows.Forms.ColumnHeader columnHeader18;
+        internal System.Windows.Forms.ColumnHeader ColumnHeader1;
     }
 }
 

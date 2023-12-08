@@ -121,6 +121,26 @@ Public Class Ethernet_IO_Kart
                 Gelen_Datalar_Listview.Items.Add(items)
             Next
 
+            If Role_1_Suresi_Text.Text = "0" Then
+                Role_1_Suresi_Text.Text = "1"
+            End If
+
+            If Role_2_Suresi_Text.Text = "0" Then
+                Role_2_Suresi_Text.Text = "1"
+            End If
+
+            If Role_3_Suresi_Text.Text = "0" Then
+                Role_3_Suresi_Text.Text = "1"
+            End If
+
+            If Role_4_Suresi_Text.Text = "0" Then
+                Role_4_Suresi_Text.Text = "1"
+            End If
+
+            If Cihaz_ID_Text.Text = "0" Then
+                Cihaz_ID_Text.Text = "1"
+            End If
+
             If Gelen_Datalar_Listview.Items.Count > 0 Then Gelen_Datalar_Listview.Items(0).Selected = True
         End If
     End Sub
@@ -195,7 +215,7 @@ Public Class Ethernet_IO_Kart
         Dim Komut As String = "$CAG"
         Komut &= Mac_Adres_Text.Text ' Mac ID
         Komut &= Cihaz_Adı_Text.Text.PadRight(16, " ") ' Cihaz Adı
-        Komut &= Role_4_Suresi_Text.Text.PadLeft(4, "0") ' Cihaz ID
+        Komut &= Cihaz_ID_Text.Text.PadLeft(4, "0") ' Cihaz ID
         Komut &= "00" ' Tcp-Udp \ Server-Client
         Komut &= IPSplit(0).PadLeft(3, "0") & IPSplit(1).PadLeft(3, "0") & IPSplit(2).PadLeft(3, "0") & IPSplit(3).PadLeft(3, "0") ' İp Adres
         Komut &= AltAgMaskesi(0).PadLeft(3, "0") & AltAgMaskesi(1).PadLeft(3, "0") & AltAgMaskesi(2).PadLeft(3, "0") & AltAgMaskesi(3).PadLeft(3, "0") ' Sub Mask
@@ -213,8 +233,7 @@ Public Class Ethernet_IO_Kart
 
         Komut &= "00000000000000000000000000000000000000000000000000**" ' Revize. Toplam Gidecek Data Uzunluğu 175 Olmalıdır.
 
-        Dim srt As String = "00000000000000000000000000000000000000000000000000"
-        MsgBox(srt.Length)
+
         ' Cihaz Gelen Data Kontrolünü Yapar ve Beklenilen Format Dışında Bir Değer Tespit Ederse Error Komutunu Döndürür.
         ' Örnek Ip Adresi 192.168.1.120  Olması Gerekirken
         '192.168.300.100 Gönderirsen veya İçerisinde Harf Yer Alırsa Gibi  Durumlarda.

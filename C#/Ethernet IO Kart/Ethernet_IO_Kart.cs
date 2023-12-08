@@ -235,8 +235,15 @@ namespace Ethernet_IO_Kart
             }
 
 
-            
-          if (Gelen_Datalar_Listview.Items.Count>0) Gelen_Datalar_Listview.Items[0].Selected = true;
+           
+
+             if (Role_1_Suresi_Text.Text == "0")  Role_1_Suresi_Text.Text = "1";
+               if (Role_2_Suresi_Text.Text == "0") Role_2_Suresi_Text.Text = "1";
+                if (Role_3_Suresi_Text.Text == "0") Role_3_Suresi_Text.Text = "1";
+                if (Role_4_Suresi_Text.Text == "0") Role_4_Suresi_Text.Text = "1";
+                if (Cihaz_ID_Text.Text == "0") Cihaz_ID_Text.Text = "1";
+
+                if (Gelen_Datalar_Listview.Items.Count>0) Gelen_Datalar_Listview.Items[0].Selected = true;
 
 
 
